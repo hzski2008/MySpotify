@@ -22,7 +22,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
-(Not implementated yet)
+(Not implementated yet)<br>
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## To do
@@ -30,5 +30,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 1. Replace client side authentication with backend side one
 2. Search function
 3. Locate the searched tracks in other source(e.g youtube) and download and play them locally
-4. ...
+4. docker image
+5. ...
 
