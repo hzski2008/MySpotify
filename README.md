@@ -1,4 +1,4 @@
-# SpotifyWrapper
+# SpotifyLists
 
 This Angular application shows user's playlists once he logs into to his spotify account. When user selects a track from left-pane list, the track starts to play (only preview version due to DRM), and track details are displayed in right-side pane.
 
