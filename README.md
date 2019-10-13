@@ -2,6 +2,8 @@
 
 This Angular application shows user's playlists once he logs into to his spotify account. When user selects a track from left-pane list, the track starts to play (only preview version due to DRM), and track details are displayed in right-side pane.
 
+![Screenshot](./screenshot.png)
+
 ## Installation
 
 1. Register the application with spotify
@@ -10,8 +12,6 @@ This Angular application shows user's playlists once he logs into to his spotify
 4. Run 'npm run start' to load the application in development server<br/>
 Open the url http://localhost:4300 in your browser<br/>
 (You can change this url in package.json. And you need to update callback url in your spotify dev acount) 
-
-![Screenshot](./screenshot.png)
 
 ## Build
 
