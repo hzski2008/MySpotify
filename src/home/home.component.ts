@@ -89,7 +89,7 @@ export class HomeComponent implements OnInit {
   private AddTracks(tracks: TrackDetails[]) {
     const children = _.cloneDeep(tracks);
     for (const child of children) {
-      child["name"] = _.get(child, "track.album.name");
+      child["name"] = _.get(child, "track.name");
       child["id"] = _.get(child, "track.id");
       this.tracksById[_.get(child, "track.id")] = _.get(child, "track");
       if (!this.selectedTrack) {
