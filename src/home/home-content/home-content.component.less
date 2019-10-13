@@ -1,0 +1,57 @@
+@import "../home.component.less";
+
+.pane-body-right {
+  height: ~"calc(100% - 5.2rem)";
+  padding-top:  4rem;
+}
+
+.container {
+  text-align: center;
+  padding-left: 0px !important;
+
+  .blink {
+    animation: blinker 1s linear infinite;
+    color: #ff0000;
+    font-weight: bold;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .white-text {
+    color: #ffffff !important;
+  }
+
+  .content {
+    display: inline-block;
+
+    .main-toolbar {
+      .spacer {
+        flex: 1 1 auto;
+      }
+      .toolbar-btn {
+        font-size: 12px;
+        margin-right:5px;
+        cursor: pointer;
+      }
+    }
+    .image {
+      margin: 2.5rem;
+      text-align: center;
+      font-size:24px;
+      color: #3f51b5;
+      .mat-icon{
+        height:300px !important;
+        width:300px !important;
+        font-size:10px !important;
+      }
+    }
+
+    .bold-font {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}

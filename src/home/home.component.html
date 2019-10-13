@@ -1,0 +1,32 @@
+<div class="home-root full-height full-width" [hidden]="!auth.authenticated" (click)="handleClick($event)">
+    <div class="pull-left full-height home-pane pane-left">
+        <div class="header-bar button-left" >
+            <button id="profileToggle" class="header-button toggle" type="button" data-toggle="collapse" data-target="#profileForm">
+                <img class="user-logo" mat-raised-button matTooltip="User profile" matTooltipPosition="right" [src]=" userProfile | default: 'images[0].url' ">
+            </button>
+            <form id="profileForm" class="toggle-form collapse">
+                <div class="content">
+                    <legend >User Profile</legend>
+                    <section>
+                        <div>
+                            <span>{{userProfile | default: "display_name"}}</span>
+                            <span>
+                                <br>
+                                <span>{{userProfile | default: "email"}}</span>
+                            </span>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+        <div class="full-width left-pane-body pull-left">
+            <div class="full-width full-height" id="playListTree"></div>
+        </div>
+    </div>
+    <div class="pull-right full-height home-pane right-pane-root">
+        <app-home-header>
+        </app-home-header>
+        <app-home-content [track] = "selectedTrack">
+        </app-home-content>
+    </div>
+</div>

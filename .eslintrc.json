@@ -1,0 +1,18 @@
+{
+    "extends": "airbnb-base",
+    "env" : {
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "protractor" : true
+    },
+    "rules" : {
+        "linebreak-style" : "off",
+        "quotes" : ["error", "double"],
+        "max-len" : "off",
+        "no-await-in-loop" : "off",
+        "no-restricted-syntax" : "off",
+        "no-plusplus": "off",
+        "no-console": "off"
+    }
+}
