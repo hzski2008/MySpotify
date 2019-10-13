@@ -1,38 +1,31 @@
 <div class="full-width pane-body-right ">
     <div class="full-width full-height" id="contentPane">
-      <div class="container">
-        <mat-toolbar color="primary" class="main-toolbar" >
-          <span>
-            <a href="{{track | default: 'album.external_urls'}}" class="white-text">{{track | default: "album.name" }}</a>
-          </span>
-          <span class="spacer"></span>
-        </mat-toolbar>
-        <div class="content">
-          <div class="image">
-            <img [src]="track | default: 'album.images[0].url'" class="mat-icon">
-            </div>
-            <mat-list color="primary">
-              <mat-list-item  >
-                <h4 mat-line> By
-                  <span *ngFor="let artist of (track | default: 'artists' : '')">
-                    <a href="{{artist.external_url}}" class="bold-font">
-                        {{artist.name}}</a>,&nbsp;
-                  </span>
-                </h4>
-                <mat-icon color="primary" mat-list-icon>music_note</mat-icon>
-                <h4 mat-line>{{track | default: "name"}} </h4>
-                <!-- <mat-divider></mat-divider> -->
-              </mat-list-item>
-            </mat-list>
-            <div [hidden] = "track && track.preview_url" class="blink">
-              Preview not available, please try another track
-            </div>
+        <div class="container">
             <mat-toolbar color="primary" class="main-toolbar" >
-              <audio controls [src]="track && track.preview_url" ></audio>
+                <span> <a href="{{track | default: 'album.external_urls'}}" class="white-text">{{track | default: "album.name" }}</a> </span>
+                <span class="spacer"></span>
             </mat-toolbar>
+            <div class="content">
+                <div class="image">
+                    <img [src]="track | default: 'album.images[0].url'" class="mat-icon">
+                </div>
+                <div>
+                    <mat-toolbar color="primary" class="main-toolbar" >
+                        <audio controls [src]="track && track.preview_url" ></audio>
+                    </mat-toolbar>
+                </div>
+                <h4 mat-line>
+                  <mat-icon color="primary" mat-list-icon>
+                    music_note
+                  </mat-icon>
+                    {{track | default: "name"}}
+                </h4>
+                <h4 mat-line>
+                  By
+                  <span *ngFor="let artist of (track | default: 'artists' : '')"> <a href="{{artist.external_url}}" class="bold-font"> {{artist.name}}</a>,&nbsp; </span>
+                </h4>
+                <div [hidden] = "track && track.preview_url" class="blink"> Preview not available, please try another track </div>
+              </div>
+            </div>
           </div>
-        </div>
-    </div>
 </div>
-
-
