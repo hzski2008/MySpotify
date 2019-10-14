@@ -13,7 +13,7 @@ This Angular application shows user's playlists once he logs into to his spotify
 3. Run 'npm install' to install required 3rd party packages
 4. Run 'npm run start' to load the application in development server<br/>
 Open the url http://localhost:4300 in your browser<br/>
-(You can change this url in package.json. And you need to update callback url in your spotify dev acount) 
+(You can change this url in package.json. And you need to update callback url to the changed one in your spotify dev acount) 
 
 ## Build
 
