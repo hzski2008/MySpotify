@@ -24,7 +24,7 @@
     "@types/facebook-js-sdk": "^3.3.0",
     "bootstrap": "3.3.7",
     "bootstrap-submenu": "3.0.1",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "less": "^3.10.3",
     "lodash": "^4.17.15",
     "rxjs": "~6.4.0",
