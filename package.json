@@ -26,7 +26,7 @@
     "bootstrap-submenu": "3.0.1",
     "jquery": "3.3.1",
     "less": "^3.10.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "rxjs": "~6.4.0",
     "syncfusion-javascript": "^17.3.14",
     "tslib": "^1.10.0",
